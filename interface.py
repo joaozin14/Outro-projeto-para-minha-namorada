@@ -55,7 +55,7 @@ st.markdown("""
 
 st.markdown(f"""
     <div class="contador">
-        Estamos juntos há <span class="dias">{diferenca.days}</span> dias, <span class="minutos">{formatado_minutos}</span> minutos e <span class="segundos">{formatado_segundos}</span> segundos e seguimos contando ❤.
+        Estamos juntos há <span class="dias">{diferenca.days}</span> dias, <span class="minutos">{formatado_minutos}</span> minutos e <span class="segundos">{formatado_segundos}</span> segundos, e seguimos contando ❤.
     </div>
 """, unsafe_allow_html=True)
 
