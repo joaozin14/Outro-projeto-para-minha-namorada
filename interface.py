@@ -53,10 +53,9 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Exiba os resultados com a estilização
 st.markdown(f"""
     <div class="contador">
-        Estamos á <span class="dias">{diferenca.days}</span> dias, <span class="minutos">{formatado_minutos}</span> minutos e <span class="segundos">{formatado_segundos}</span> segundos juntos ❤.
+        Estamos juntos há <span class="dias">{diferenca.days}</span> dias, <span class="minutos">{formatado_minutos}</span> minutos e <span class="segundos">{formatado_segundos}</span> segundos juntos e seguimos contando ❤.
     </div>
 """, unsafe_allow_html=True)
 
