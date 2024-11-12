@@ -7,6 +7,8 @@ diferenca = data_atual - data_passada
 total_segundos = diferenca.total_seconds()
 minutos_totais = int(total_segundos // 60) 
 segundos_totais = int(diferenca.total_seconds())
+formatado_minutos = f"{minutos_totais:,}".replace(",", ".")
+formatado_segundos = f"{segundos_totais:,}".replace(",", ".")
 
 st.markdown("""
     <h1 class="titulo">Contador dos nossos dias juntos ❤</h1> 
@@ -54,7 +56,7 @@ st.markdown("""
 # Exiba os resultados com a estilização
 st.markdown(f"""
     <div class="contador">
-        Estamos á <span class="dias">{diferenca.days}</span> dias, <span class="minutos">{minutos_totais}</span> minutos e <span class="segundos">{segundos_totais}</span> segundos juntos ❤.
+        Estamos á <span class="dias">{diferenca.days}</span> dias, <span class="minutos">{formatado_minutos}</span> minutos e <span class="segundos">{formatado_segundos}</span> segundos juntos ❤.
     </div>
 """, unsafe_allow_html=True)
 
